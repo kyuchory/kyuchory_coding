@@ -243,6 +243,16 @@ function renderModal(p) {
     </div>
   `;
 
+  // 문제/입력/출력/힌트에 들어있는 $...$ LaTeX 수식 렌더링 (예제·코드 입력창은 제외)
+  if (window.renderMathInElement) {
+    document.querySelectorAll("#modal-content .problem-content").forEach((el) => {
+      renderMathInElement(el, {
+        delimiters: [{ left: "$", right: "$", display: false }],
+        throwOnError: false,
+      });
+    });
+  }
+
   // Tag click → filter
   document.querySelectorAll(".modal-tag").forEach((el) => {
     el.addEventListener("click", () => {
