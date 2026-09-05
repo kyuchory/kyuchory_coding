@@ -155,15 +155,11 @@ async function openProblem(id, pushState = true) {
     renderModal(p);
     // 제목 및 메타 업데이트
     const tierName = TIER_NAMES[p.level ?? 0] ?? "Unrated";
-    document.title = `${p.id}번 ${p.title} — BOJ Archive`;
-    setMeta("og:title", `${p.id}번 ${p.title} [${tierName}] — BOJ Archive`);
+    document.title = `${p.id}번 ${p.title} — 코딩 아카이브`;
+    setMeta("og:title", `${p.id}번 ${p.title} [${tierName}] — 코딩 아카이브`);
     setMeta(
       "og:description",
       `${p.time_limit ?? ""} | ${p.memory_limit ?? ""} | 태그: ${(p.tags ?? []).join(", ")}`,
-    );
-    setMeta(
-      "twitter:title",
-      `${p.id}번 ${p.title} [${tierName}] — BOJ Archive`,
     );
   } catch {
     document.getElementById("modal-content").innerHTML =
@@ -326,8 +322,8 @@ function closeModal() {
   params.delete("p");
   const newUrl = params.toString() ? `?${params}` : location.pathname;
   history.pushState(null, "", newUrl);
-  document.title = "BOJ Archive — 백준 온라인 저지 문제 아카이브";
-  setMeta("og:title", "BOJ Archive — 백준 온라인 저지 문제 아카이브");
+  document.title = "코딩 아카이브";
+  setMeta("og:title", "코딩 아카이브");
 }
 
 // ── Multi-Language Runner ─────────────────────────────────────────
