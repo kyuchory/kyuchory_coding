@@ -263,6 +263,7 @@ function renderModal(p) {
         <select class="runner-lang-select" id="runner-lang">
           <option value="python">Python 3</option>
           <option value="cpp">C / C++</option>
+          <option value="java">Java 8</option>
         </select>
         <span class="runner-lang-hint" id="runner-lang-hint"></span>
       </div>
@@ -342,10 +343,12 @@ const LANG_PLACEHOLDERS = {
   python:
     "# Python 코드를 여기에 입력하세요\nimport sys\ninput = sys.stdin.readline",
   cpp: "#include <bits/stdc++.h>\nusing namespace std;\nint main() {\n    \n    return 0;\n}",
+  java: "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n    }\n}",
 };
 const LANG_HINTS = {
   python: "Pyodide WASM",
   cpp: "JSCPP 인터프리터 (일부 제한)",
+  java: "CheerpJ (브라우저 내 JVM, 최초 로딩 느림·무한루프 시 새로고침 필요)",
 };
 const LANG_WORKER_FILES = {
   python: "js/pyodide-worker.js",
@@ -354,7 +357,109 @@ const LANG_WORKER_FILES = {
 const LANG_LOADING_MSG = {
   python: "Pyodide 로딩 중... (최초 실행 시 수십 초 소요)",
   cpp: "JSCPP 로딩 중...",
+  java: "Java 런타임(CheerpJ) 로딩 중... (최초 실행 시 다소 오래 걸림)",
 };
+
+// ── Java (CheerpJ) ─────────────────────────────────────────────────
+// CheerpJ는 Worker가 아니라 메인 스레드에서 도는 실제 JDK(WebAssembly)라
+// 다른 언어와 달리 무한루프를 강제 종료할 방법이 없다 (탭 새로고침 필요).
+const CHEERPJ_LOADER_URL = "https://cjrtnc.leaningtech.com/4.3/loader.js";
+const JAVA_CLASSPATH = "/app/tools.jar:/files/";
+// System.in을 /str/stdin.txt로 바꿔치기한 뒤 사용자 클래스의 main을 리플렉션으로 호출.
+// CheerpJ는 공식적으로 stdin 리다이렉트 API를 제공하지 않아서 직접 우회한다.
+const JAVA_RUNNER_SOURCE = `import java.io.*;
+import java.lang.reflect.*;
+
+public class Runner {
+    public static void main(String[] args) throws Exception {
+        System.setIn(new FileInputStream("/str/stdin.txt"));
+        Class<?> cls = Class.forName(args[0]);
+        Method m = cls.getMethod("main", String[].class);
+        m.invoke(null, (Object) new String[0]);
+    }
+}
+`;
+
+let cheerpjReadyPromise = null;
+
+function loadScript(src) {
+  return new Promise((resolve, reject) => {
+    const el = document.createElement("script");
+    el.src = src;
+    el.onload = resolve;
+    el.onerror = () => reject(new Error(`스크립트 로드 실패: ${src}`));
+    document.head.appendChild(el);
+  });
+}
+
+function ensureCheerpj() {
+  if (!cheerpjReadyPromise) {
+    cheerpjReadyPromise = loadScript(CHEERPJ_LOADER_URL)
+      .then(() => window.cheerpjInit({ status: "none" }))
+      .then(() => {
+        window.cheerpjCreateDisplay(
+          -1,
+          -1,
+          document.getElementById("cj-display-mount"),
+        );
+      })
+      .catch((err) => {
+        cheerpjReadyPromise = null; // 실패 시 다음 실행에서 재시도 가능하게
+        throw err;
+      });
+  }
+  return cheerpjReadyPromise;
+}
+
+function extractJavaClassName(code) {
+  const pub = code.match(/public\s+(?:final\s+|abstract\s+)?class\s+(\w+)/);
+  if (pub) return pub[1];
+  const any = code.match(/\bclass\s+(\w+)/);
+  return any ? any[1] : "Main";
+}
+
+async function runJavaCode(code, stdin) {
+  const statusEl = document.getElementById("py-status");
+  if (statusEl) statusEl.textContent = LANG_LOADING_MSG.java;
+  try {
+    await ensureCheerpj();
+  } catch (err) {
+    return { output: null, error: "CheerpJ 로드 실패: " + err.message };
+  }
+  if (statusEl) statusEl.textContent = "";
+
+  const consoleEl = document.getElementById("console");
+  consoleEl.textContent = "";
+
+  const className = extractJavaClassName(code);
+  const encoder = new TextEncoder();
+  window.cheerpjAddStringFile(`/str/${className}.java`, encoder.encode(code));
+  window.cheerpjAddStringFile("/str/Runner.java", encoder.encode(JAVA_RUNNER_SOURCE));
+  window.cheerpjAddStringFile("/str/stdin.txt", encoder.encode(stdin ?? ""));
+
+  try {
+    const compileCode = await window.cheerpjRunMain(
+      "com.sun.tools.javac.Main",
+      JAVA_CLASSPATH,
+      `/str/${className}.java`,
+      "/str/Runner.java",
+      "-d",
+      "/files/",
+    );
+    if (compileCode !== 0) {
+      return { output: null, error: consoleEl.textContent || "컴파일 실패" };
+    }
+
+    consoleEl.textContent = "";
+    await window.cheerpjRunMain("Runner", JAVA_CLASSPATH, className);
+    return { output: consoleEl.textContent || "", error: null };
+  } catch (err) {
+    return {
+      output: consoleEl.textContent || null,
+      error: err.message ?? String(err),
+    };
+  }
+}
 
 function createLangWorker(lang) {
   const opts = lang === "cpp" ? { type: "module" } : undefined;
@@ -416,6 +521,7 @@ function ensureLangWorker(lang, onReady) {
 }
 
 function runCode(lang, code, stdinData) {
+  if (lang === "java") return runJavaCode(code, stdinData);
   return new Promise((resolve) => {
     const statusEl = document.getElementById("py-status");
     if (!langReady[lang] && statusEl)

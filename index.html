@@ -118,6 +118,14 @@
       </div>
     </div>
 
+    <!-- CheerpJ(자바 실행기)가 컴파일/실행 출력을 쓰는 곳. 화면엔 안 보이지만
+         페이지 생명주기 동안 계속 살아있어야 하므로 모달 밖에 둠. -->
+    <pre id="console" style="position:fixed;left:-9999px;top:-9999px;"></pre>
+    <div
+      id="cj-display-mount"
+      style="position:fixed;left:-9999px;top:-9999px;width:300px;height:300px;"
+    ></div>
+
     <script type="module" src="js/main.js"></script>
 
     <footer class="site-footer">
@@ -126,7 +134,10 @@
       <a href="https://www.acmicpc.net" target="_blank" rel="noopener">
         Baekjoon Online Judge (acmicpc.net)
       </a>
-      및 각 문제의 원저작자에게 있습니다.
+      및 각 문제의 원저작자에게 있습니다.<br />
+      Java 코드 실행기는
+      <a href="https://cheerpj.com" target="_blank" rel="noopener">CheerpJ</a>
+      로 동작합니다.
     </footer>
   </body>
 </html>
