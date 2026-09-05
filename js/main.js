@@ -171,6 +171,39 @@ async function openProblem(id, pushState = true) {
   }
 }
 
+function copyToClipboard(text, btn) {
+  const showCopied = () => {
+    const original = btn.textContent;
+    btn.textContent = "복사됨";
+    btn.classList.add("copied");
+    setTimeout(() => {
+      btn.textContent = original;
+      btn.classList.remove("copied");
+    }, 1200);
+  };
+
+  if (navigator.clipboard?.writeText) {
+    navigator.clipboard.writeText(text).then(showCopied).catch(() => {
+      fallbackCopy(text);
+      showCopied();
+    });
+  } else {
+    fallbackCopy(text);
+    showCopied();
+  }
+}
+
+function fallbackCopy(text) {
+  const ta = document.createElement("textarea");
+  ta.value = text;
+  ta.style.position = "fixed";
+  ta.style.opacity = "0";
+  document.body.appendChild(ta);
+  ta.select();
+  document.execCommand("copy");
+  document.body.removeChild(ta);
+}
+
 function setMeta(property, content) {
   let el = document.querySelector(`meta[property="${property}"]`);
   if (el) el.setAttribute("content", content);
@@ -183,12 +216,18 @@ function renderModal(p) {
       (s, i) => `
     <div class="sample-grid" style="margin-bottom:12px">
       <div class="sample-box">
-        <div class="sample-box-header">예제 입력 ${i + 1}</div>
-        <pre>${escHtml(s.input ?? "")}</pre>
+        <div class="sample-box-header">
+          <span>예제 입력 ${i + 1}</span>
+          <button class="copy-btn" data-copy-target="sample-in-${i}">복사</button>
+        </div>
+        <pre id="sample-in-${i}">${escHtml(s.input ?? "")}</pre>
       </div>
       <div class="sample-box">
-        <div class="sample-box-header">예제 출력 ${i + 1}</div>
-        <pre>${escHtml(s.output ?? "")}</pre>
+        <div class="sample-box-header">
+          <span>예제 출력 ${i + 1}</span>
+          <button class="copy-btn" data-copy-target="sample-out-${i}">복사</button>
+        </div>
+        <pre id="sample-out-${i}">${escHtml(s.output ?? "")}</pre>
       </div>
     </div>`,
     )
@@ -252,6 +291,15 @@ function renderModal(p) {
       });
     });
   }
+
+  // 예제 입력/출력 복사 버튼
+  document.querySelectorAll(".copy-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const target = document.getElementById(btn.dataset.copyTarget);
+      if (!target) return;
+      copyToClipboard(target.textContent ?? "", btn);
+    });
+  });
 
   // Tag click → filter
   document.querySelectorAll(".modal-tag").forEach((el) => {
