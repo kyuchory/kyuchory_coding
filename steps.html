@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>단계별로 풀어보기 — BOJ Archive</title>
+
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="알고리즘 유형(태그)별로 묶은 문제 카테고리. 카테고리를 고르면 쉬운 문제부터 어려운 문제 순으로 풀어볼 수 있습니다."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <link
+      rel="canonical"
+      href="https://kyuchory.github.io/kyuchory_coding/steps.html"
+    />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="site-logo" href="." aria-label="BOJ Archive">
+        <img src="favicon.svg" alt="BOJ Archive" />
+      </a>
+      <div class="steps-title">단계별로 풀어보기</div>
+      <a class="steps-link" href="index.html">전체 문제 목록</a>
+      <div class="header-stat" id="stat"></div>
+      <a
+        class="github-btn"
+        href="https://github.com/kyuchory/kyuchory_coding"
+        target="_blank"
+        rel="noopener"
+      >
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
+          />
+        </svg>
+        GitHub
+      </a>
+    </header>
+
+    <main>
+      <p class="steps-intro">
+        태그(알고리즘 유형)별로 문제를 묶었습니다. 카테고리를 고르면 그 유형의
+        문제를 쉬운 난이도부터 순서대로 풀어볼 수 있습니다.
+      </p>
+      <div id="content">
+        <div class="loading">
+          <div class="spinner"></div>
+          카테고리 불러오는 중...
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="js/steps.js"></script>
+
+    <footer class="site-footer">
+      개인 학습용으로 운영되는 사이트입니다.<br />
+      수록된 문제의 저작권은
+      <a href="https://www.acmicpc.net" target="_blank" rel="noopener">
+        Baekjoon Online Judge (acmicpc.net)
+      </a>
+      및 각 문제의 원저작자에게 있습니다.
+    </footer>
+  </body>
+</html>

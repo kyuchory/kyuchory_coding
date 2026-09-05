@@ -1,0 +1,22 @@
+{
+  "id": 10173,
+  "title": "니모를 찾아서",
+  "time_limit": "1 초",
+  "memory_limit": "256 MB",
+  "description": "<p style=\"text-align:center\"><img alt=\"니모에 대한 이미지 검색결과\" src=\"nemo.jpg\" /></p>\r\n\r\n<p>영어 문장속 숨어있는 니모(Nemo)를 찾아보자. 니모를 찾는데 있어서 대소문자는 중요하지 않다.</p>\r\n",
+  "input": "<p>여러 문장이 각 줄로 입력되며, 입력의&nbsp;마지막에는 &quot;EOI&quot; 입력된다. 한 줄은 최대 80개의 글자로 이루어져 있다.</p>\r\n",
+  "output": "<p>숨겨진 니모를 찾으면 &ldquo;Found&rdquo;, 못찾으면&nbsp;&ldquo;Missing&rdquo;를 각 줄에 맞게 출력하면 된다.</p>\r\n",
+  "samples": [
+    {
+      "input": "Marlin names this last egg Nemo, a name that Coral liked.\nWhile attempting to save nemo, Marlin meets Dory,\na good-hearted and optimistic regal blue tang with short-term memory loss. \nUpon leaving the East Australian Current,(888*%$^&%0928375)Marlin and Dory\nNEMO leaves for school and Marlin watches NeMo swim away.\nEOI\n",
+      "output": "Found\nFound\nMissing\nMissing\nFound\n"
+    }
+  ],
+  "hint": null,
+  "source": "School, PLU High School Programming Contest, PLU 2014, Novice, vumbumy, onjo0127, leehosu01, hanjungv",
+  "level": 4,
+  "tags": ["string"],
+  "accepted_user_count": 2548,
+  "submission_count": null,
+  "average_tries": 1.846500039100647
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<!-- EmbeddedPlayerNeue.html -->
+    <meta name="viewport" content="width=device-width,height=500">
+    <meta name="viewport" content="width=device-width,height=500" id="viewportmeta" />
+
+    
+<script type="text/javascript" nonce="sXE1NL1mum4H1KUDsfDuwQ==">
+window.BCTracker=window.BCTracker||{preloadQueue:[],record:function(){this.preloadQueue.push(Array.prototype.slice.call(arguments))},prePageViewCallbacks:[],afterPageView:function(e){this.prePageViewCallbacks.push(e)}},window.ScrollDepthTracker=function(){this.track=function(){}},window.ScrollDepthTracker.track=function(){}
+</script>
+
+    <script type="text/javascript" src="https://s4.bcbits.com/client-bundle/1/BCCookies_1/bccookies-fb37f2fdf1cf58b7b623df3dda68227d.js" crossorigin="anonymous" nonce="sXE1NL1mum4H1KUDsfDuwQ==" ></script>
+    <script type="text/javascript" src="https://s4.bcbits.com/client-bundle/1/trackpipe/jquery-28f3818b035fbb0ffba7ab9877afe2b9.js" crossorigin="anonymous" nonce="sXE1NL1mum4H1KUDsfDuwQ==" ></script>
+    <script type="text/javascript" src="https://s4.bcbits.com/client-bundle/1/trackpipe/jquery_ui-faedad0b6c850180361bfdefe69fb7e4.js" crossorigin="anonymous" nonce="sXE1NL1mum4H1KUDsfDuwQ==" ></script>
+    <script type="text/javascript" src="https://s4.bcbits.com/client-bundle/1/GlobalJS_1/tko_trackpipe-525ac32695cf93110d7d35f736fd51e7.js" crossorigin="anonymous" nonce="sXE1NL1mum4H1KUDsfDuwQ==" ></script>
+    <script type="text/javascript" src="https://s4.bcbits.com/client-bundle/1/trackpipe/embedded_player-a611d1eb0e5ca7388beec9093f81813c.js" crossorigin="anonymous" nonce="sXE1NL1mum4H1KUDsfDuwQ==" data-browser="{&quot;type&quot;:&quot;webkit&quot;,&quot;make&quot;:&quot;chrome&quot;,&quot;version&quot;:[124,0,0,0],&quot;platform&quot;:&quot;mac&quot;,&quot;grade&quot;:&quot;A&quot;,&quot;platform_name&quot;:&quot;&quot;,&quot;platform_closed&quot;:false,&quot;download_difficulty&quot;:&quot;easy&quot;,&quot;media_mode&quot;:&quot;desktop&quot;,&quot;mobile_app_compatible&quot;:false}" data-templ-globals="{&quot;siteroot&quot;:&quot;http://bandcamp.com&quot;,&quot;siteroot_https&quot;:&quot;https://bandcamp.com&quot;,&quot;siteroot_current&quot;:&quot;https://bandcamp.com&quot;,&quot;static_siteroot&quot;:&quot;https://s4.bcbits.com&quot;,&quot;is_https&quot;:true,&quot;image_siteroot&quot;:&quot;https://f4.bcbits.com&quot;,&quot;image_siteroot_https&quot;:&quot;https://f4.bcbits.com&quot;,&quot;image_formats&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;original&quot;,&quot;resize_algo&quot;:&quot;original&quot;,&quot;file_format&quot;:null},{&quot;id&quot;:1,&quot;name&quot;:&quot;fullsize&quot;,&quot;resize_algo&quot;:&quot;scrub&quot;,&quot;file_format&quot;:&quot;original&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;art_thumb&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:350,&quot;height&quot;:350,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;art_thumbthumb&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:100,&quot;height&quot;:100,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:4,&quot;name&quot;:&quot;art_embedded_metadata&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:300,&quot;height&quot;:300,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:5,&quot;name&quot;:&quot;art_embedded_metadata_large&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:700,&quot;height&quot;:700,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:6,&quot;name&quot;:&quot;art_embedded_player&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:100,&quot;height&quot;:100,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:7,&quot;name&quot;:&quot;art_embedded_player_large&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:150,&quot;height&quot;:150,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:8,&quot;name&quot;:&quot;art_tags&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:124,&quot;height&quot;:124,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:9,&quot;name&quot;:&quot;art_tags_large&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:210,&quot;height&quot;:210,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:10,&quot;name&quot;:&quot;screen&quot;,&quot;resize_algo&quot;:&quot;fit&quot;,&quot;width&quot;:1200,&quot;height&quot;:1200,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:11,&quot;name&quot;:&quot;art_tag_search&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:172,&quot;height&quot;:172,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:12,&quot;name&quot;:&quot;art_artist_index&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:138,&quot;height&quot;:138,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:13,&quot;name&quot;:&quot;art_solo_feature&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:380,&quot;height&quot;:380,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:14,&quot;name&quot;:&quot;art_feature&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:368,&quot;height&quot;:368,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:15,&quot;name&quot;:&quot;art_feed_new_release&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:135,&quot;height&quot;:135,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:16,&quot;name&quot;:&quot;art_app_large&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:700,&quot;height&quot;:700,&quot;file_format&quot;:&quot;JPEG&quot;,&quot;quality&quot;:70,&quot;minsize&quot;:{&quot;size&quot;:30000,&quot;format&quot;:5}},{&quot;id&quot;:20,&quot;name&quot;:&quot;bio_screen&quot;,&quot;resize_algo&quot;:&quot;fit&quot;,&quot;width&quot;:1024,&quot;height&quot;:1024,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:21,&quot;name&quot;:&quot;bio_thumb&quot;,&quot;resize_algo&quot;:&quot;fit&quot;,&quot;width&quot;:120,&quot;height&quot;:180,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:22,&quot;name&quot;:&quot;bio_navbar&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:25,&quot;height&quot;:25,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:23,&quot;name&quot;:&quot;bio_phone&quot;,&quot;resize_algo&quot;:&quot;fit&quot;,&quot;width&quot;:300,&quot;height&quot;:300,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:24,&quot;name&quot;:&quot;bio_licensing&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:300,&quot;height&quot;:300,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:25,&quot;name&quot;:&quot;bio_app&quot;,&quot;resize_algo&quot;:&quot;fit&quot;,&quot;width&quot;:700,&quot;height&quot;:700,&quot;file_format&quot;:&quot;JPEG&quot;,&quot;quality&quot;:70},{&quot;id&quot;:26,&quot;name&quot;:&quot;bio_subscribe&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:800,&quot;height&quot;:600,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:27,&quot;name&quot;:&quot;bio_subscribe2&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:715,&quot;height&quot;:402,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:28,&quot;name&quot;:&quot;bio_featured&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:768,&quot;height&quot;:432,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:29,&quot;name&quot;:&quot;bio_autocomplete&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:100,&quot;height&quot;:75,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:31,&quot;name&quot;:&quot;package_screen&quot;,&quot;resize_algo&quot;:&quot;fit&quot;,&quot;width&quot;:1024,&quot;height&quot;:1024,&quot;file_format&quot;:&quot;original&quot;},{&quot;id&quot;:32,&quot;name&quot;:&quot;package_solo_feature&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:380,&quot;height&quot;:285,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:33,&quot;name&quot;:&quot;package_feature&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:368,&quot;height&quot;:276,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:36,&quot;name&quot;:&quot;package_page&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:400,&quot;height&quot;:300,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:37,&quot;name&quot;:&quot;package_thumb&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:168,&quot;height&quot;:126,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:38,&quot;name&quot;:&quot;package_thumb_small&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:144,&quot;height&quot;:108,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:41,&quot;name&quot;:&quot;fan_bio_thumb&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:210,&quot;height&quot;:210,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:42,&quot;name&quot;:&quot;fan_bio_thumb_small&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;height&quot;:50,&quot;width&quot;:50,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:43,&quot;name&quot;:&quot;fan_banner&quot;,&quot;resize_algo&quot;:&quot;fit&quot;,&quot;height&quot;:100,&quot;width&quot;:99999,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:44,&quot;name&quot;:&quot;fan_banner_2x&quot;,&quot;resize_algo&quot;:&quot;fit&quot;,&quot;height&quot;:200,&quot;width&quot;:99999,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:50,&quot;name&quot;:&quot;results_grid&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:140,&quot;height&quot;:140,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:65,&quot;name&quot;:&quot;tralbum_page_cover_art&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:700,&quot;height&quot;:700,&quot;file_format&quot;:&quot;JPEG&quot;,&quot;quality&quot;:70,&quot;minsize&quot;:{&quot;size&quot;:30000,&quot;format&quot;:69},&quot;anim_ok&quot;:true},{&quot;id&quot;:66,&quot;name&quot;:&quot;tralbum_page_cover_art_popup&quot;,&quot;resize_algo&quot;:&quot;fit&quot;,&quot;width&quot;:1200,&quot;height&quot;:1200,&quot;file_format&quot;:&quot;JPEG&quot;,&quot;anim_ok&quot;:true},{&quot;id&quot;:67,&quot;name&quot;:&quot;art_thumb_anim_ok&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:350,&quot;height&quot;:350,&quot;file_format&quot;:&quot;JPEG&quot;,&quot;anim_ok&quot;:true},{&quot;id&quot;:68,&quot;name&quot;:&quot;art_tags_large_anim_ok&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:210,&quot;height&quot;:210,&quot;file_format&quot;:&quot;JPEG&quot;,&quot;anim_ok&quot;:true},{&quot;id&quot;:69,&quot;name&quot;:&quot;art_embedded_metadata_large_anim_ok&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:700,&quot;height&quot;:700,&quot;file_format&quot;:&quot;JPEG&quot;,&quot;anim_ok&quot;:true},{&quot;id&quot;:70,&quot;name&quot;:&quot;tralbum_page_package_small&quot;,&quot;resize_algo&quot;:&quot;fit&quot;,&quot;width&quot;:360,&quot;height&quot;:270,&quot;file_format&quot;:&quot;JPEG&quot;,&quot;mozjpeg&quot;:true},{&quot;id&quot;:71,&quot;name&quot;:&quot;tralbum_page_package_large&quot;,&quot;resize_algo&quot;:&quot;fit&quot;,&quot;width&quot;:720,&quot;height&quot;:540,&quot;file_format&quot;:&quot;JPEG&quot;,&quot;mozjpeg&quot;:true},{&quot;id&quot;:100,&quot;name&quot;:&quot;custom_header_desktop&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:975,&quot;max_height&quot;:180,&quot;file_format&quot;:&quot;PNG&quot;,&quot;allow_transparency&quot;:true},{&quot;id&quot;:102,&quot;name&quot;:&quot;custom_header_desktop_avif&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:975,&quot;max_height&quot;:180,&quot;file_format&quot;:&quot;AVIF&quot;,&quot;allow_transparency&quot;:true},{&quot;id&quot;:101,&quot;name&quot;:&quot;custom_header_paypal&quot;,&quot;resize_algo&quot;:&quot;fit&quot;,&quot;width&quot;:750,&quot;height&quot;:90,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:120,&quot;name&quot;:&quot;custom_header_phone&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:640,&quot;max_height&quot;:124,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:130,&quot;name&quot;:&quot;design_background&quot;,&quot;resize_algo&quot;:&quot;scrub&quot;,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:140,&quot;name&quot;:&quot;subscribe_message&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:60,&quot;height&quot;:45,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:150,&quot;name&quot;:&quot;video_landscape&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:1280,&quot;height&quot;:720,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:151,&quot;name&quot;:&quot;video_portrait&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:720,&quot;height&quot;:1280,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:160,&quot;name&quot;:&quot;buy_full_email_thumb_montage&quot;,&quot;resize_algo&quot;:&quot;thumb_crop&quot;,&quot;width&quot;:60,&quot;height&quot;:100,&quot;left&quot;:40,&quot;top&quot;:0,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:161,&quot;name&quot;:&quot;buy_full_email_thumb_montage_release&quot;,&quot;resize_algo&quot;:&quot;thumb_crop&quot;,&quot;width&quot;:40,&quot;height&quot;:80,&quot;left&quot;:40,&quot;top&quot;:0,&quot;file_format&quot;:&quot;JPEG&quot;,&quot;quality&quot;:100},{&quot;id&quot;:165,&quot;name&quot;:&quot;ppp_email_gift_thumb&quot;,&quot;resize_algo&quot;:&quot;thumb_composite&quot;,&quot;overlay_image&quot;:&quot;public/img/banner_email.png&quot;,&quot;x_offset&quot;:92,&quot;y_offset&quot;:0,&quot;width&quot;:210,&quot;height&quot;:210,&quot;file_format&quot;:&quot;JPEG&quot;,&quot;quality&quot;:100},{&quot;id&quot;:170,&quot;name&quot;:&quot;weekly_mobile_web&quot;,&quot;resize_algo&quot;:&quot;fit&quot;,&quot;width&quot;:750,&quot;height&quot;:422,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:171,&quot;name&quot;:&quot;weekly_desktop&quot;,&quot;resize_algo&quot;:&quot;fit&quot;,&quot;width&quot;:1244,&quot;height&quot;:646,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:180,&quot;name&quot;:&quot;bcdaily_homepage_big&quot;,&quot;resize_algo&quot;:&quot;fit&quot;,&quot;width&quot;:1244,&quot;height&quot;:646,&quot;file_format&quot;:&quot;JPEG&quot;,&quot;anim_ok&quot;:true},{&quot;id&quot;:200,&quot;name&quot;:&quot;mobile_fan_banner_ios_3x&quot;,&quot;resize_algo&quot;:&quot;fit&quot;,&quot;width&quot;:1125,&quot;height&quot;:420,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:201,&quot;name&quot;:&quot;mobile_fan_banner_ios_2x&quot;,&quot;resize_algo&quot;:&quot;fit&quot;,&quot;width&quot;:750,&quot;height&quot;:280,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:202,&quot;name&quot;:&quot;mobile_fan_banner_ios_1x&quot;,&quot;resize_algo&quot;:&quot;fit&quot;,&quot;width&quot;:375,&quot;height&quot;:140,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:203,&quot;name&quot;:&quot;mobile_fan_banner_android_xxxhdpi&quot;,&quot;resize_algo&quot;:&quot;fit&quot;,&quot;width&quot;:1125,&quot;height&quot;:420,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:204,&quot;name&quot;:&quot;mobile_fan_banner_android_xxhdpi&quot;,&quot;resize_algo&quot;:&quot;fit&quot;,&quot;width&quot;:960,&quot;height&quot;:360,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:205,&quot;name&quot;:&quot;mobile_fan_banner_android_xhdpi&quot;,&quot;resize_algo&quot;:&quot;fit&quot;,&quot;width&quot;:640,&quot;height&quot;:240,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:206,&quot;name&quot;:&quot;mobile_fan_banner_android_hdpi&quot;,&quot;resize_algo&quot;:&quot;fit&quot;,&quot;width&quot;:480,&quot;height&quot;:180,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:207,&quot;name&quot;:&quot;mobile_fan_banner_android_mdpi&quot;,&quot;resize_algo&quot;:&quot;fit&quot;,&quot;width&quot;:320,&quot;height&quot;:120,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:220,&quot;name&quot;:&quot;newsletter_artist_feature&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:900,&quot;height&quot;:468,&quot;file_format&quot;:&quot;JPEG&quot;},{&quot;id&quot;:300,&quot;name&quot;:&quot;grayscale_thumb&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:350,&quot;height&quot;:350,&quot;file_format&quot;:&quot;JPEG&quot;,&quot;filter&quot;:&quot;grayscale&quot;},{&quot;id&quot;:499,&quot;name&quot;:&quot;art_app_large_webp&quot;,&quot;resize_algo&quot;:&quot;thumb&quot;,&quot;width&quot;:700,&quot;height&quot;:700,&quot;file_format&quot;:&quot;WEBP&quot;,&quot;quality&quot;:70}],&quot;custom_domains_active&quot;:true,&quot;base_port_str&quot;:null,&quot;sitedomain&quot;:&quot;bandcamp.com&quot;}" data-use-script="true" data-siteroot-current="&quot;https://bandcamp.com&quot;" data-parent-page="&quot;https://www.acmicpc.net/&quot;" data-player-data="{&quot;band_enabled&quot;:1,&quot;band_url&quot;:&quot;https://dayofmourning.bandcamp.com&quot;,&quot;album_title&quot;:&quot;This Too Will Pass&quot;,&quot;album_art_id&quot;:659650030,&quot;artist&quot;:&quot;Day Of Mourning&quot;,&quot;subdomain&quot;:&quot;dayofmourning&quot;,&quot;album_id&quot;:3179954399,&quot;killed&quot;:null,&quot;publish_date&quot;:&quot;05 Apr 2018 15:35:45 GMT&quot;,&quot;album_private&quot;:null,&quot;featured_track_id&quot;:3273004033,&quot;linkback&quot;:&quot;https://dayofmourning.bandcamp.com/album/this-too-will-pass&quot;,&quot;linkback_action&quot;:&quot;buy&quot;,&quot;subscriber_only&quot;:false,&quot;tracks&quot;:[{&quot;artist&quot;:&quot;Day Of Mourning&quot;,&quot;title&quot;:&quot;VIRIDIAN&quot;,&quot;id&quot;:3273004033,&quot;encodings_id&quot;:1332705228,&quot;art_id&quot;:null,&quot;duration&quot;:114.0,&quot;tracknum&quot;:0,&quot;title_link&quot;:&quot;https://dayofmourning.bandcamp.com/track/viridian&quot;,&quot;file&quot;:{&quot;mp3-128&quot;:&quot;https://t4.bcbits.com/stream/c2cfc57c1280f1f8ae547d0b13eb7161/mp3-128/3273004033?p=0&amp;ts=1776400388&amp;t=4449c61060026046ae2f87d4ae495004ecd1c6e1&amp;token=1776400388_e6cd1b40dca1e5fefe0187f434564abeae2945ef&quot;},&quot;track_streaming&quot;:true,&quot;preorder_download_track&quot;:false},{&quot;artist&quot;:&quot;Day Of Mourning&quot;,&quot;title&quot;:&quot;FRACTURA&quot;,&quot;id&quot;:1839988223,&quot;encodings_id&quot;:809469326,&quot;art_id&quot;:null,&quot;duration&quot;:201.875,&quot;tracknum&quot;:1,&quot;title_link&quot;:&quot;https://dayofmourning.bandcamp.com/track/fractura&quot;,&quot;file&quot;:{&quot;mp3-128&quot;:&quot;https://t4.bcbits.com/stream/14cb0d237cb82034fdc7f4c09a611b06/mp3-128/1839988223?p=0&amp;ts=1776400388&amp;t=3669d3a228468173eaa11d1ee8422a33261af2d8&amp;token=1776400388_a4f0810d69b7e25f520d1dbff67292d267d33277&quot;},&quot;track_streaming&quot;:true,&quot;preorder_download_track&quot;:false},{&quot;artist&quot;:&quot;Day Of Mourning&quot;,&quot;title&quot;:&quot;HOLLOW EARTH&quot;,&quot;id&quot;:1355552537,&quot;encodings_id&quot;:2701741393,&quot;art_id&quot;:null,&quot;duration&quot;:254.5,&quot;tracknum&quot;:2,&quot;title_link&quot;:&quot;https://dayofmourning.bandcamp.com/track/hollow-earth&quot;,&quot;file&quot;:{&quot;mp3-128&quot;:&quot;https://t4.bcbits.com/stream/80428ab38a0770b8b6b60a1aaa627847/mp3-128/1355552537?p=0&amp;ts=1776400388&amp;t=aa4dfe80ba9644ccc8d75c8551a72e708bcac5f0&amp;token=1776400388_94439bdb81d3456e3ab5a9ea2dde1a8d251874c0&quot;},&quot;track_streaming&quot;:true,&quot;preorder_download_track&quot;:false},{&quot;artist&quot;:&quot;Day Of Mourning&quot;,&quot;title&quot;:&quot;PRAYER&quot;,&quot;id&quot;:1349973664,&quot;encodings_id&quot;:4259927944,&quot;art_id&quot;:null,&quot;duration&quot;:195.25,&quot;tracknum&quot;:3,&quot;title_link&quot;:&quot;https://dayofmourning.bandcamp.com/track/prayer&quot;,&quot;file&quot;:{&quot;mp3-128&quot;:&quot;https://t4.bcbits.com/stream/be8143552c4432e4e62d911109586950/mp3-128/1349973664?p=0&amp;ts=1776400388&amp;t=085f44a90c5a2d9e5fa75c144a55dc2dd2db0637&amp;token=1776400388_c067bb458b4bea630a3cfe51e0e8719d6ece2c32&quot;},&quot;track_streaming&quot;:true,&quot;preorder_download_track&quot;:false},{&quot;artist&quot;:&quot;Day Of Mourning&quot;,&quot;title&quot;:&quot;FEAR &amp; VALIANCE&quot;,&quot;id&quot;:734919143,&quot;encodings_id&quot;:1929949381,&quot;art_id&quot;:null,&quot;duration&quot;:210.766,&quot;tracknum&quot;:4,&quot;title_link&quot;:&quot;https://dayofmourning.bandcamp.com/track/fear-valiance&quot;,&quot;file&quot;:{&quot;mp3-128&quot;:&quot;https://t4.bcbits.com/stream/cc6ad15abfb440eb375e34aa2c9877fb/mp3-128/734919143?p=0&amp;ts=1776400388&amp;t=df2cc11c9038e1209166380973b4c2f52530bfcf&amp;token=1776400388_525057324a7c5c8f7a2760005cf1d6ce2a1cb21d&quot;},&quot;track_streaming&quot;:true,&quot;preorder_download_track&quot;:false},{&quot;artist&quot;:&quot;Day Of Mourning&quot;,&quot;title&quot;:&quot;WRETCHED FLESH&quot;,&quot;id&quot;:1767497649,&quot;encodings_id&quot;:265945324,&quot;art_id&quot;:null,&quot;duration&quot;:238.732,&quot;tracknum&quot;:5,&quot;title_link&quot;:&quot;https://dayofmourning.bandcamp.com/track/wretched-flesh&quot;,&quot;file&quot;:{&quot;mp3-128&quot;:&quot;https://t4.bcbits.com/stream/eaa7cd62dd98e54624e6cd8729093fcb/mp3-128/1767497649?p=0&amp;ts=1776400388&amp;t=c74fa193d2469387edd3ef022e4063ee42bdc70c&amp;token=1776400388_ab230319ada9ab4f33edba6a63ccebb3da64915e&quot;},&quot;track_streaming&quot;:true,&quot;preorder_download_track&quot;:false},{&quot;artist&quot;:&quot;Day Of Mourning&quot;,&quot;title&quot;:&quot;DERIVATIVES&quot;,&quot;id&quot;:750870176,&quot;encodings_id&quot;:2788894372,&quot;art_id&quot;:null,&quot;duration&quot;:157.556,&quot;tracknum&quot;:6,&quot;title_link&quot;:&quot;https://dayofmourning.bandcamp.com/track/derivatives&quot;,&quot;file&quot;:{&quot;mp3-128&quot;:&quot;https://t4.bcbits.com/stream/4dd98d85917631a53ff8e2c031b8a66b/mp3-128/750870176?p=0&amp;ts=1776400388&amp;t=4c4c31270c81a7ab8b7749ae19f21981e9103993&amp;token=1776400388_390498b4191f2b30e03408c59fe8524e12eb9afd&quot;},&quot;track_streaming&quot;:true,&quot;preorder_download_track&quot;:false},{&quot;artist&quot;:&quot;Day Of Mourning&quot;,&quot;title&quot;:&quot;BABEL&quot;,&quot;id&quot;:513331584,&quot;encodings_id&quot;:2351276436,&quot;art_id&quot;:null,&quot;duration&quot;:211.158,&quot;tracknum&quot;:7,&quot;title_link&quot;:&quot;https://dayofmourning.bandcamp.com/track/babel&quot;,&quot;file&quot;:{&quot;mp3-128&quot;:&quot;https://t4.bcbits.com/stream/001dcbd5198ecbbe04c62215b50e64bd/mp3-128/513331584?p=0&amp;ts=1776400388&amp;t=c818a087d56d2d4f0f71fbcd8a4a8ee0ceb77180&amp;token=1776400388_d060f0bd09512720e68b91116eef6e21d160d44e&quot;},&quot;track_streaming&quot;:true,&quot;preorder_download_track&quot;:false},{&quot;artist&quot;:&quot;Day Of Mourning&quot;,&quot;title&quot;:&quot;BEHIND THE MASK&quot;,&quot;id&quot;:3254304860,&quot;encodings_id&quot;:1241296730,&quot;art_id&quot;:null,&quot;duration&quot;:229.125,&quot;tracknum&quot;:8,&quot;title_link&quot;:&quot;https://dayofmourning.bandcamp.com/track/behind-the-mask&quot;,&quot;file&quot;:{&quot;mp3-128&quot;:&quot;https://t4.bcbits.com/stream/1bbd4b85e79736e63faa1a8a1a4dea60/mp3-128/3254304860?p=0&amp;ts=1776400388&amp;t=b2f9fa90bd0eb275ca279c4c42a484d363d9a6ae&amp;token=1776400388_cd6a4b370754d7e2122e29fd1d7f78c1c34423e6&quot;},&quot;track_streaming&quot;:true,&quot;preorder_download_track&quot;:false},{&quot;artist&quot;:&quot;Day Of Mourning&quot;,&quot;title&quot;:&quot;BABEL (ACOUSTIC)&quot;,&quot;id&quot;:3215548459,&quot;encodings_id&quot;:2348667366,&quot;art_id&quot;:null,&quot;duration&quot;:289.352,&quot;tracknum&quot;:9,&quot;title_link&quot;:&quot;https://dayofmourning.bandcamp.com/track/babel-acoustic&quot;,&quot;file&quot;:{&quot;mp3-128&quot;:&quot;https://t4.bcbits.com/stream/c9de5619223b20390893ca2cb90576cc/mp3-128/3215548459?p=0&amp;ts=1776400388&amp;t=ebacf215f54074cda722169404cfd60c33ceb874&amp;token=1776400388_321a6749a38fece3fb03f845b614f5d7d6cf82c5&quot;},&quot;track_streaming&quot;:true,&quot;preorder_download_track&quot;:false}],&quot;google_analytics_id&quot;:null,&quot;exclusive_permitted_domains&quot;:[],&quot;exclusive_show_anywhere&quot;:null,&quot;no_exclusive_data&quot;:1,&quot;is_preorder&quot;:null,&quot;streaminfos&quot;:{&quot;513331584&quot;:{&quot;encodings_id&quot;:2351276436,&quot;stream_type&quot;:&quot;t&quot;,&quot;format&quot;:101,&quot;file_id&quot;:3415136992,&quot;metadata_crc&quot;:null},&quot;734919143&quot;:{&quot;encodings_id&quot;:1929949381,&quot;stream_type&quot;:&quot;t&quot;,&quot;format&quot;:101,&quot;file_id&quot;:1193131113,&quot;metadata_crc&quot;:null},&quot;750870176&quot;:{&quot;encodings_id&quot;:2788894372,&quot;stream_type&quot;:&quot;t&quot;,&quot;format&quot;:101,&quot;file_id&quot;:347559604,&quot;metadata_crc&quot;:null},&quot;1349973664&quot;:{&quot;encodings_id&quot;:4259927944,&quot;stream_type&quot;:&quot;t&quot;,&quot;format&quot;:101,&quot;file_id&quot;:111657901,&quot;metadata_crc&quot;:null},&quot;1355552537&quot;:{&quot;encodings_id&quot;:2701741393,&quot;stream_type&quot;:&quot;t&quot;,&quot;format&quot;:101,&quot;file_id&quot;:466540701,&quot;metadata_crc&quot;:null},&quot;1767497649&quot;:{&quot;encodings_id&quot;:265945324,&quot;stream_type&quot;:&quot;t&quot;,&quot;format&quot;:101,&quot;file_id&quot;:1632169927,&quot;metadata_crc&quot;:null},&quot;1839988223&quot;:{&quot;encodings_id&quot;:809469326,&quot;stream_type&quot;:&quot;t&quot;,&quot;format&quot;:101,&quot;file_id&quot;:1172129779,&quot;metadata_crc&quot;:null},&quot;3215548459&quot;:{&quot;encodings_id&quot;:2348667366,&quot;stream_type&quot;:&quot;t&quot;,&quot;format&quot;:101,&quot;file_id&quot;:3850859330,&quot;metadata_crc&quot;:null},&quot;3254304860&quot;:{&quot;encodings_id&quot;:1241296730,&quot;stream_type&quot;:&quot;t&quot;,&quot;format&quot;:101,&quot;file_id&quot;:1474327706,&quot;metadata_crc&quot;:null},&quot;3273004033&quot;:{&quot;encodings_id&quot;:1332705228,&quot;stream_type&quot;:&quot;t&quot;,&quot;format&quot;:101,&quot;file_id&quot;:4001005345,&quot;metadata_crc&quot;:null}},&quot;album_art&quot;:&quot;https://f4.bcbits.com/img/a0659650030_7.jpg&quot;,&quot;album_art_lg&quot;:&quot;https://f4.bcbits.com/img/a0659650030_2.jpg&quot;,&quot;packages&quot;:[]}" data-params="{&quot;album&quot;:&quot;3179954399&quot;,&quot;size&quot;:&quot;large&quot;,&quot;bgcol&quot;:&quot;ffffff&quot;,&quot;linkcol&quot;:&quot;0687f5&quot;,&quot;tracklist&quot;:&quot;false&quot;,&quot;artwork&quot;:&quot;small&quot;,&quot;track&quot;:&quot;3254304860&quot;,&quot;transparent&quot;:&quot;true&quot;,&quot;ref&quot;:&quot;https%3A%2F%2Fwww.acmicpc.net%2F&quot;,&quot;fgcol&quot;:&quot;&quot;,&quot;url_referrer&quot;:false,&quot;anim_ok&quot;:false}" data-player-errors="null" data-init-hep3="&quot;neue&quot;"></script>
+    <script type="text/javascript" src="https://s4.bcbits.com/client-bundle/1/GlobalJS_1/time-c6f294f92b5c3a7bd018b03b3c71f372.js" crossorigin="anonymous" nonce="sXE1NL1mum4H1KUDsfDuwQ==" ></script>
+
+    <link type="text/css" rel="stylesheet" href="https://s4.bcbits.com/client-bundle/1/trackpipe/embedded_player-e5952006057763222369c3ef2adc00c5.css">
+    
+        
+    	<link type="text/css" rel="stylesheet" href="https://s4.bcbits.com/client-bundle/1/trackpipe/embedded_player_v3-47800b71cd382012fbcc43ab9f94c410.css">
+        <link type="text/css" rel="stylesheet" href="https://s4.bcbits.com/client-bundle/1/trackpipe/embedded_player_v3_large-cba3625520b30babd46179721c1712e2.css">
+    
+
+    <style type="text/css">
+    
+        body {
+        
+            background-color: transparent;
+        
+            overflow: hidden;
+        }
+        #player .error {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            margin: 1em;
+            white-space: normal;
+            visibility: hidden;
+        }
+
+        
+        
+        
+
+        
+        
+        
+        a,.linktext {
+            color: #0687f5;
+        }
+        .thumb.ui-draggable-dragging {
+            border: solid 1px #0687f5;
+        }
+
+        .merchthumb.selected {
+            outline: 1px solid #0687f5;
+        }
+        .classic .fgtext {
+            color: #;
+        }
+    
+    </style>
+</head>
+<body>
+    <!-- use_script: true  use_css: true -->
+    
+    <div id="player" class="inline_player initialstate size_large trackspecified smallartwork">
+        <div id="artarea">
+            <a id="artlink" href="#">
+                <div id="art" class="item"></div>
+            </a>
+            <div id="big_play_button" class="item"><div id="big_play_icon"></div></div>
+            <a class="logo" href="#" target="_blank"><span class="icon">&nbsp;</span></a>
+        </div>
+
+        <div id="nonartarea">
+        <div id="merch" class="item">
+        </div>
+
+        <div id="infolayer">
+            <a class="artlink" href="#">
+                <div class="art item"></div>
+            </a>
+            <div class="info">
+            <a class="logo" href="#" target="_blank"><span class="icon">&nbsp;</span></a>
+            <a id="logoalt2" href="#" target="_blank"><span class="icon">&nbsp;</span></a>
+            <div id="maintext" class="item linktext">
+                <a id="maintextlink" href="#" target="_blank"></a>
+            </div>
+            <div id="linkarea" class="item">
+                <span id="buyordownload">
+                    <a id="buyordownloadlink" href="#" target="_blank">download</a>
+                </span>
+                <span id="share">
+                    <a id="sharelink" href="#" target="_blank">share</a>
+                </span>
+            </div>
+
+            <div id="subtext" class="item linktext">
+                <a id="subtextlink" href="#" target="_blank"></a>
+            </div>
+
+            <div id="albumtrackartistrow">
+                <div id="album" class="item">
+                </div>
+                <div id="trackname" class="item">
+                    <a id="tracknamelink" href="#" target="_blank"></a>
+                </div>
+                <div id="artist" class="item">
+                </div>
+            </div>
+
+            <div id="play" class="embeddedplaybutton item"></div>
+
+            <div id="currenttitlerow"><!-- provide block layout item for inline-block stuff before timeline-->
+                <div id="currenttitle" class="item">
+                    <span id="currenttitle_tracknum"></span>
+                    <span id="currenttitle_title" class="fgtext"></span>
+                </div>
+                <div id="currenttimeblock">
+                    <div id="currenttime" class="item"></div>
+                    <div id="totaltime" class="item"></div>
+                </div>
+            </div>
+
+            <div id="timelinecontainer">
+                <div id="timeline" class="item">
+                    <div class="progbar_empty">
+                        <div id="progbar_fill" class="progbar_fill">
+                            <div id="progbar_fill_played" class="progbar_fill played"></div>
+                        </div>
+                    <div class="thumb" id="progbar_thumb"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="prevnext">
+                <div id="prev" class="prevbutton item big"><div class="icon"></div></div>
+                <div id="next" class="nextbutton item big"><div class="icon"></div></div>
+            </div>
+            </div>
+        </div>
+
+        <div id="tracklist" class="item">
+            <div id="tracklist_scroller">
+                <ul id="tracklist_ul">
+                </ul>
+            </div>
+        </div>
+
+        <div id="linkareaalt" class="item">
+            <span id="buyordownloadalt">
+                <a id="buyordownloadlinkalt" href="#" target="_blank">download</a>
+            </span>
+            <span id="sharealt">
+                <a id="sharelinkalt" href="#" target="_blank">share</a>
+            </span>
+        </div>
+        <a id="logoalt" href="#" target="_blank"><span class="icon">&nbsp;</span></a>
+<div style="display: none">
+</div>
+        </div>
+
+        <div id="sharedialog" title="Share">
+            <p>
+                <a href="https://dayofmourning.bandcamp.com/album/this-too-will-pass?action=embed" target="_blank">Embed this album<span class="icons"><span class="small bc-ui2">small</span><span class="medium bc-ui2">medium</span><span class="large bc-ui2">large</span></span></a>
+            </p>
+            <p>
+                Email:
+                <input id="shareurl" type="text" value="https://dayofmourning.bandcamp.com/album/this-too-will-pass" readonly />
+            </p>
+
+            
+            
+
+            <div class="share-embed-container">
+            <div class="downloadShare ">
+                <ul class="share-buttons-list social-controls" data-url="https://dayofmourning.bandcamp.com/album/this-too-will-pass">
+                    <li class="facebook-share-ctrl btn" data-stat="like_button"></li>
+                    <li class="twitter-ctrl btn" data-text="omg best album ever: " data-stat="tweet_button"></li>
+                    <li class="tumblr-ctrl btn" data-type="audio" data-text="Listen/purchase: &lt;a href=&quot;&quot;&gt; by Day Of Mourning&lt;/a&gt;" data-stat="tumblr_button"></li>
+                </ul>
+            </div>
+            </div>
+            
+        </div>
+
+        <div id="tinyplayer" class="tinyplayer item"><a href="#" target="_blank" id="infolink"></a></div>
+        <div id="badtralbumerror" class="error">Sorry, this track or album is not available.</div>
+        <div id="badbrowsererror" class="error">Sorry, this player does not support your browser. Your browser must either support native HTML audio or have the Flash plugin installed.</div>
+    </div>
+        
+    
+<script type="text/javascript" src="https://s4.bcbits.com/client-bundle/1/Tracker_1/analytics-f6d7fd2522940544d7e5f73a03ca3c4f.js" crossorigin="anonymous" nonce="sXE1NL1mum4H1KUDsfDuwQ==" data-data="{&quot;env&quot;:2,&quot;domain_match&quot;:true,&quot;our_ids&quot;:[&quot;UA-4189134-12&quot;],&quot;bandGoogleAnalyticsId&quot;:null}"></script>
+<script type="text/javascript" src="https://s4.bcbits.com/client-bundle/1/Tracker_1/impl-2fd8d3e0ca4ebe03fd7a3b7d60fa3671.js" crossorigin="anonymous" nonce="sXE1NL1mum4H1KUDsfDuwQ==" data-enabled="true" data-transport="&quot;beacon&quot;" data-record-url="&quot;https://bandcamp.com/api/tracker/1/record&quot;" data-send-delay="5" data-auto-track-clicks="true" data-auto-track-filters="null"></script>
+ 
+</body>
+</html>
+<!-- flexocentral-ttz9-7 2026-04-16 04:33:08 UTC -->

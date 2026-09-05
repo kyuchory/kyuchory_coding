@@ -1,0 +1,20 @@
+{
+  "name": "boj-archive",
+  "type": "module",
+  "version": "0.3.3",
+  "scripts": {
+    "test": "vitest run",
+    "test:unit": "vitest run tests/unit",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:watch": "vitest",
+    "format:check": "prettier --check .",
+    "format:write": "prettier --write ."
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "prettier": "^3.8.3",
+    "serve": "^14.2.6",
+    "vitest": "^3.1.3"
+  }
+}
