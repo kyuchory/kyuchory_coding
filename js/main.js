@@ -350,6 +350,12 @@ const LANG_HINTS = {
   cpp: "JSCPP 인터프리터 (일부 제한)",
   java: "CheerpJ (브라우저 내 JVM, 최초 로딩 느림·무한루프 시 새로고침 필요)",
 };
+// C/C++·Java는 placeholder(회색 힌트)가 아니라 실제 코드 값으로 채워서
+// 보일러플레이트를 매번 타이핑하지 않아도 되게 함. 필요 없으면 지우면 됨.
+const LANG_PREFILL = {
+  cpp: LANG_PLACEHOLDERS.cpp,
+  java: LANG_PLACEHOLDERS.java,
+};
 const LANG_WORKER_FILES = {
   python: "js/pyodide-worker.js",
   cpp: "js/jscpp-worker.js",
@@ -364,7 +370,11 @@ const LANG_LOADING_MSG = {
 // CheerpJ는 Worker가 아니라 메인 스레드에서 도는 실제 JDK(WebAssembly)라
 // 다른 언어와 달리 무한루프를 강제 종료할 방법이 없다 (탭 새로고침 필요).
 const CHEERPJ_LOADER_URL = "https://cjrtnc.leaningtech.com/4.3/loader.js";
-const JAVA_CLASSPATH = "/app/tools.jar:/files/";
+// tools.jar은 /app/(도메인 루트 기준)이 아니라 우리가 직접 fetch해서 /str/에 올린다 —
+// GitHub Pages처럼 하위 경로(project site)에 배포되면 /app/tools.jar가 실제로는
+// 도메인 루트를 가리켜서 못 찾는다 (cheerpjInit의 overrideDocumentBase로도 안 고쳐짐,
+// 직접 확인함).
+const JAVA_CLASSPATH = "/str/tools.jar:/files/";
 // System.in을 /str/stdin.txt로 바꿔치기한 뒤 사용자 클래스의 main을 리플렉션으로 호출.
 // CheerpJ는 공식적으로 stdin 리다이렉트 API를 제공하지 않아서 직접 우회한다.
 const JAVA_RUNNER_SOURCE = `import java.io.*;
@@ -381,6 +391,7 @@ public class Runner {
 `;
 
 let cheerpjReadyPromise = null;
+let toolsJarReadyPromise = null;
 
 function loadScript(src) {
   return new Promise((resolve, reject) => {
@@ -390,6 +401,25 @@ function loadScript(src) {
     el.onerror = () => reject(new Error(`스크립트 로드 실패: ${src}`));
     document.head.appendChild(el);
   });
+}
+
+function ensureToolsJar() {
+  if (!toolsJarReadyPromise) {
+    // 현재 페이지 기준 상대경로로 fetch — 배포 경로(하위 폴더 포함)에 상관없이 항상 맞게 찾음.
+    toolsJarReadyPromise = fetch(new URL("tools.jar", location.href).href)
+      .then((res) => {
+        if (!res.ok) throw new Error(`tools.jar 로드 실패 (${res.status})`);
+        return res.arrayBuffer();
+      })
+      .then((buf) => {
+        window.cheerpjAddStringFile("/str/tools.jar", new Uint8Array(buf));
+      })
+      .catch((err) => {
+        toolsJarReadyPromise = null;
+        throw err;
+      });
+  }
+  return toolsJarReadyPromise;
 }
 
 function ensureCheerpj() {
@@ -423,6 +453,7 @@ async function runJavaCode(code, stdin) {
   if (statusEl) statusEl.textContent = LANG_LOADING_MSG.java;
   try {
     await ensureCheerpj();
+    await ensureToolsJar();
   } catch (err) {
     return { output: null, error: "CheerpJ 로드 실패: " + err.message };
   }
@@ -689,7 +720,13 @@ function attachRunnerListeners(samples, problemId) {
 
   function restoreCode(lang) {
     const key = lang + ":" + problemId;
-    codeEl.value = langCodeStore[key] ?? "";
+    if (key in langCodeStore) {
+      codeEl.value = langCodeStore[key];
+    } else {
+      // C/C++·Java는 매번 타이핑하기 귀찮은 보일러플레이트를 기본값으로 채워둠.
+      // (한 번이라도 저장된 적 있으면 — 빈 문자열로 지운 경우 포함 — 그 상태를 존중)
+      codeEl.value = LANG_PREFILL[lang] ?? "";
+    }
     codeEl.placeholder = LANG_PLACEHOLDERS[lang] ?? "";
     if (hintEl) hintEl.textContent = LANG_HINTS[lang] ?? "";
   }
